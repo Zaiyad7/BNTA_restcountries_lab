@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  display: flex; /* Use Flexbox */
+  display: flex; 
   justify-content: space-between; /* Spacing between the two sections */
-  gap: 20px; /* Gap between the two sections */
+  gap: 20px;
 }
 
 
