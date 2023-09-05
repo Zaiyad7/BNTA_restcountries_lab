@@ -7,7 +7,7 @@ function App() {
   const [selectedCountry, setSelectedCountry] = useState(null);
 
   useEffect(() => {
-    // Fetch countries from the RESTCountries API
+    // Fetch countries from the API
     fetch('https://restcountries.com/v3.1/all')
       .then((response) => response.json())
       .then((data) => setCountries(data))
@@ -36,6 +36,7 @@ function App() {
                 onClick={() => toggleVisited(country.name.common)}
               >
                 {country.name.common}
+                {country.flag}
               </span>
             </li>
           ))}
